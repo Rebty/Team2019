@@ -1,3 +1,13 @@
 <resources>
+
     <string name="app_name">Team2019</string>
+
+    <string name="activity_login_textView_welcome_text">Добро пожаловать!</string>
+    <string name="activity_login_editText_login_hint">Логин</string>
+    <string name="activity_login_editText_password_hint">Пароль</string>
+    <string name="activity_login_button_login_text">ВХОД</string>
+    <string name="activity_login_button_forgetPassword_text">ЗАБЫЛИ ПАРОЛЬ?</string>
+    <string name="activity_login_textView_registrationInfo_text">Нет аккаунта?</string>
+    <string name="activity_login_button_registration_text">СОЗДАТЬ АККАУНТ</string>
+
 </resources>
