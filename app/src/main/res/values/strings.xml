@@ -9,5 +9,7 @@
     <string name="activity_login_button_forgetPassword_text">ЗАБЫЛИ ПАРОЛЬ?</string>
     <string name="activity_login_textView_registrationInfo_text">Нет аккаунта?</string>
     <string name="activity_login_button_registration_text">СОЗДАТЬ АККАУНТ</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
