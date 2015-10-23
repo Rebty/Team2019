@@ -81,7 +81,9 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/activity_login_button_registration_flat_selector"
         android:text="@string/activity_login_button_registration_text"
+
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="onClick" />
 
 </RelativeLayout>

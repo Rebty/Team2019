@@ -27,13 +27,6 @@ public class LoginActivity extends Fragment {
         activity_login_button_login = (Button) v.findViewById(R.id.activity_login_button_login);
         activity_login_button_forgetPassword = (Button) v.findViewById(R.id.activity_login_button_forgetPassword);
         activity_login_button_registration = (Button) v.findViewById(R.id.activity_login_button_registration);
-
-        activity_login_button_registration.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(v.getContext(), RegistrationActivity.class));
-            }
-        });
         return v;
     }
 
