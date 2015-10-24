@@ -11,50 +11,50 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.rebty.team2019.RegistrationActivity">
+        tools:context="com.rebty.team2019.Fragments.RegistrationFragment">
 
 
         <EditText
-            android:id="@+id/activity_registration_editText_surname"
+            android:id="@+id/fragment_registration_editText_surName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="15dp"
-            android:hint="Фамилия" />
+            android:hint="@string/fragment_registration_editText_surName_hint" />
 
         <EditText
-            android:id="@+id/activity_registration_editText_firstName"
+            android:id="@+id/fragment_registration_editText_firstName"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_below="@+id/activity_registration_editText_surname"
+            android:layout_below="@+id/fragment_registration_editText_surName"
             android:layout_marginBottom="15dp"
-            android:hint="Имя" />
+            android:hint="@string/fragment_registration_editText_firstName_hint" />
 
         <EditText
-            android:id="@+id/activity_registration_editText_eMail"
+            android:id="@+id/fragment_registration_editText_eMail"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_below="@+id/activity_registration_editText_firstName"
+            android:layout_below="@+id/fragment_registration_editText_firstName"
             android:layout_marginBottom="15dp"
-            android:hint="Email"
+            android:hint="@string/editText_login_hint"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/activity_registration_editText_password"
+            android:id="@+id/fragment_registration_editText_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_below="@+id/activity_registration_editText_eMail"
+            android:layout_below="@+id/fragment_registration_editText_eMail"
             android:layout_marginBottom="15dp"
-            android:hint="Пароль"
+            android:hint="@string/editText_password_hint"
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/activity_login_button_registration"
+            android:id="@+id/fragment_login_button_registration"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/activity_login_button_registration_flat_selector"
-            android:text="@string/activity_login_button_registration_text"
+            android:background="@color/colorAccent"
+            android:text="@string/button_registration_text"
             android:textColor="@android:color/white"
-            android:layout_below="@+id/activity_registration_editText_password"
+            android:layout_below="@+id/fragment_registration_editText_password"
             android:textSize="20sp" />
 
     </RelativeLayout>
