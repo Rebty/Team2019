@@ -1,6 +1,7 @@
 package com.rebty.team2019.Activities;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Fragment startFragment, registrationFragment, loginFragment;
     FragmentTransaction fragmentTransaction;
+    FragmentManager fragmentManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +28,15 @@ public class MainActivity extends AppCompatActivity {
         registrationFragment = new RegistrationFragment();
         loginFragment = new LoginFragment();
 
-        fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentManager=getFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.appContent, startFragment);
         fragmentTransaction.commit();
     }
 
     public void onClick(View v) {
 
-        fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction = fragmentManager.beginTransaction();
 
         switch (v.getId()) {
             case R.id.fragment_start_button_registration:
@@ -48,8 +51,14 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
 
-        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.addToBackStack("Stack");
         fragmentTransaction.commit();
+    }
+
+    @Override
+    public void onBackPressed() {
+       fragmentManager.popBackStack();
+        super.onBackPressed();
     }
 }
 
