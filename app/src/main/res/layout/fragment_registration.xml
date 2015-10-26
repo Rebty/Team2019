@@ -47,14 +47,23 @@
             android:hint="@string/editText_password_hint"
             android:inputType="textPassword" />
 
+        <EditText
+            android:id="@+id/fragment_registration_editText_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/fragment_registration_editText_password"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/fragment_registration_editText_phone_hint"
+            android:inputType="phone" />
+
         <Button
             android:id="@+id/fragment_login_button_registration"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/colorAccent"
+            android:layout_below="@+id/fragment_registration_editText_phone"
+            android:background="@drawable/button_pink_flat_selector"
             android:text="@string/button_registration_text"
             android:textColor="@android:color/white"
-            android:layout_below="@+id/fragment_registration_editText_password"
             android:textSize="20sp" />
 
     </RelativeLayout>

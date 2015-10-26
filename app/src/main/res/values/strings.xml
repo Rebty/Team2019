@@ -9,6 +9,7 @@
     <string name="fragment_login_textView_forgetPassword_text">ЗАБЫЛИ ПАРОЛЬ?</string>
     <string name="fragment_registration_editText_firstName_hint">Имя</string>
     <string name="fragment_registration_editText_surName_hint">Фамилия</string>
+    <string name="fragment_registration_editText_phone_hint">Телефон</string>
 
     <string name="title_activity_main">MainActivity</string>
     <string name="action_settings">Settings</string>

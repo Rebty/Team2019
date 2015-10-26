@@ -32,7 +32,7 @@
         android:layout_height="50dp"
         android:layout_below="@+id/fragment_login_editText_password"
         android:layout_marginBottom="15dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_pink_flat_selector"
         android:text="@string/button_login_text"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
@@ -42,11 +42,11 @@
         android:id="@+id/fragment_login_textView_forgetPassword"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="@string/fragment_login_textView_forgetPassword_text"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="20sp"
         android:layout_below="@+id/fragment_login_button_login"
         android:layout_centerHorizontal="true"
-        android:onClick="onClick" />
+        android:onClick="onClick"
+        android:text="@string/fragment_login_textView_forgetPassword_text"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp" />
 
 </RelativeLayout>

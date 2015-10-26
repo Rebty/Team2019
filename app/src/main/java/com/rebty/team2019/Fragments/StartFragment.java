@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.rebty.team2019.R;
 
 public class StartFragment extends Fragment {
@@ -14,5 +15,4 @@ public class StartFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_start, null);
         return v;
     }
-
 }

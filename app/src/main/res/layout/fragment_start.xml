@@ -21,26 +21,27 @@
         android:src="@drawable/team_2019_logo" />
 
     <Button
-        android:id="@+id/fragment_start_button_login"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimaryDark"
-        android:text="@string/button_login_text"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:onClick="onClick"/>
-
-    <Button
         android:id="@+id/fragment_start_button_registration"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_above="@+id/fragment_start_button_login"
         android:layout_marginBottom="10dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/button_pink_flat_selector"
+        android:onClick="onClick"
         android:text="@string/button_registration_text"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:onClick="onClick"/>
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/fragment_start_button_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_primary_flat_selector"
+        android:onClick="onClick"
+        android:text="@string/button_login_text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
 
 </RelativeLayout>
